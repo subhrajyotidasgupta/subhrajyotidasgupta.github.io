@@ -8,6 +8,7 @@
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <!-- <link rel="icon" type="image/png" href="images/seal_icon.png"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -61,6 +62,19 @@
             </td>
           </tr>
         </tbody></table>
+
+        <script>
+          function myFunction(pub_name) {
+              var x = document.getElementById(pub_name);
+              if (x.style.display === 'none') {
+                  x.style.display = 'block';
+              } else {
+                  x.style.display = 'none';
+              }
+        }
+        </script>
+
+
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
           <!-- <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()"  bgcolor="#ffffd0">
@@ -172,9 +186,18 @@
                 }
                 nerfie_stop()
               </script>
+              <script>
+              $(document).ready(function(){
+                $("#toggle_click_icip20").click(function(){
+                  $("#toggle_icip20").show();
+                  // $("#div2").fadeToggle("slow");
+                  // $("#div3").fadeToggle(3000);
+                });
+              });
+              </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a target=”_blank” href="https://nerfies.github.io/">
+              <a target=”_blank” href="https://ieeexplore.ieee.org/document/9506019">
                 <papertitle>Listen to the Pixels</papertitle>
               </a>
               <br>
@@ -186,10 +209,21 @@
 							<em>ICIP</em>, 2021
               <br>
               <a target=”_blank” href="https://www.youtube.com/watch?v=xUwzSQaQ9oQ">Presentation</a> /
-              <a  href="data/chowdhury2021.bib">BibTex</a>
+              <a href="javascript:void(0);" onclick="myFunction('icip21_0_bib')">BibTex</a>
               <p></p>
               <p>Audio-visual co-segmentation and sound source separation using a novel multimodal fusion mechanism, also addressing partially occluded sound source separation and co-segmentation for multiple but similar sound sources.
               </p>
+              <div id="icip21_0_bib" style="font-family:Courier;font-size: 12px; margin: 0px;padding: 10px;display:none;min-width:350px;background-color:  #F0F0F0;border-radius: 10px;"><font size="2">
+                <br>
+                  @INPROCEEDINGS{9506019,</br>
+                    author={Chowdhury, Sanjoy and Dasgupta, Subhrajyoti and Das, Sudip and Bhattacharya, Ujjwal},</br>
+                    booktitle={2021 IEEE International Conference on Image Processing (ICIP)}, </br>
+                    title={Listen To The Pixels}, </br>
+                    year={2021},</br>
+                    pages={2568-2572},</br>
+                    doi={10.1109/ICIP42928.2021.9506019}</br>
+                  }
+              </font></div>
             </td>
           </tr> 
 
@@ -211,6 +245,15 @@
                 }
                 c5_stop()
               </script>
+              <script>
+              $(document).ready(function(){
+                $("#toggle_click_icip20").click(function(){
+                  $("#toggle_icip20").fadeToggle();
+                  // $("#div2").fadeToggle("slow");
+                  // $("#div3").fadeToggle(3000);
+                });
+              });
+              </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://ieeexplore.ieee.org/abstract/document/9412905">
@@ -224,11 +267,21 @@
 							<em>ICPR</em>, 2020
               <br>
               <a target=”_blank” href="https://www.youtube.com/watch?v=BmOG9IMXFUU">Presentation</a> /
-              <a target=”_blank” href="data/dasgupta2020.bib">BibTex</a>
+              <a href="javascript:void(0);" onclick="myFunction('icpr20_0_bib')">BibTex</a>
               <p></p>
               <p>
                 Generating synthetic ECGs, for easy sharing without risk of privacy breach, using an Attention-based Generative Adversarial Network.
               </p>
+              <div id="icpr20_0_bib" style="font-family:Courier;font-size: 12px; margin: 0px;padding: 10px;display:none;min-width:350px;background-color:   #F0F0F0;border-radius: 10px;"><font size="2">
+                <br>
+                  @INPROCEEDINGS{9412905,<br> 
+                    author={Dasgupta, Subhrajyoti and Das, Sudip and Bhattacharya, Ujjwal},<br>
+                    booktitle={2020 25th International Conference on Pattern Recognition (ICPR)}, <br>
+                    title={CardioGAN: An Attention-based Generative Adversarial Network for Generation of Electrocardiograms}, <br>
+                    year={2021},<br>
+                    pages={3193-3200},<br>
+                    doi={10.1109/ICPR48806.2021.9412905}<br>
+                }
             </td>
           </tr> 
 
