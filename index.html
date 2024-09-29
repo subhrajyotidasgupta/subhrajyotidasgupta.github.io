@@ -52,6 +52,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Updates</heading>
               <p>
+                <b>[Jul '23]:</b> <i>Meerkat</i> is accepted at <b>ECCV 2024</b>! Check <a target=”_blank” href="https://schowdhury671.github.io/meerkat_project/">here</a>! </br>
                 <b>[Jul '23]:</b> <i>AdVerb</i> is accepted at <b>ICCV 2023</b>! Check <a target=”_blank” href="https://schowdhury671.github.io/adverb/">here</a>! </br>
                 <b>[Jul '23]:</b> <i>UnShadowNet</i> is accepted in <b>IEEE Access</b> journal! </br>
                 <b>[Sep '22]:</b> Joined Mila as a Master's student. The program is supervised by Prof. Yoshua Bengio. </br>
@@ -136,6 +137,70 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='nerfbake_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/meerkat.png" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/meerkat.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function nerfbake_start() {
+                  document.getElementById('nerfbake_image').style.opacity = "1";
+                }
+
+                function nerfbake_stop() {
+                  document.getElementById('nerfbake_image').style.opacity = "0";
+                }
+                nerfbake_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a target=”_blank” href="https://arxiv.org/abs/2407.01851">
+              <papertitle>Meerkat: Audio-Visual Large Language Model for Grounding in Space and Time</papertitle>
+              </a>
+              <br>
+              <a target=”_blank” href="https://schowdhury671.github.io/">Sanjoy Chowdhury</a>, 
+              <a target=”_blank” href="https://sayannag.github.io/">Sayan Nag</a>,
+              <strong>Subhrajyoti Dasgupta</strong>,
+              <a target=”_blank” href="https://junchen14.github.io/">Jun Chen</a>,
+              <a target=”_blank” href="https://www.mohamed-elhoseiny.com/">Mohamed Elhoseiny</a>,
+              <a target=”_blank” href="https://ruohangao.github.io/">Ruohan Gao</a>,
+              <a target=”_blank” href="https://www.cs.umd.edu/people/dmanocha">Dinesh Manocha</a>
+              <br>
+              <em>ECCV</em>, 2024 
+              <br>
+              <!-- <a target=”_blank” href="http://nerf.live">project page</a> -->
+              <!-- / -->
+              <!-- <a target=”_blank” href="https://www.bmvc2021-virtualconference.com/assets/papers/1430.pdf">Paper</a> -->
+              <!-- / -->
+              <a target=”_blank” href="https://github.com/schowdhury671/meerkat">Code</a>
+              /
+              <a target=”_blank” href="https://umd0-my.sharepoint.com/:f:/g/personal/sanjoyc_umd_edu/Esxw8RUgg5tNuBWwHEB3jrUBINIl3clrKRRc6n-TErWYEQ?e=bARrBP">Dataset</a>
+              /
+              <a target=”_blank” href="https://schowdhury671.github.io/meerkat_project/">Website</a>
+              /
+              <a href="javascript:void(0);" onclick="myFunction('eccv24_0_bib')">BibTex</a>
+              <p></p>
+              <p>We present Meerkat, an audio-visual LLM equipped with a fine-grained understanding of image and audio both spatially and temporally. 
+                With a new modality alignment module based on optimal transport and a cross-attention module that enforces audio-visual consistency, 
+                Meerkat can tackle challenging tasks such as audio referred image grounding, image guided audio temporal localization, and audio-visual fact-checking. 
+                Moreover, we carefully curate a large dataset AVFIT-3M that comprises 3M instruction tuning samples collected from open-source datasets, 
+                and introduce MeerkatBench that unifies five challenging audio-visual tasks.</p>
+              <div id="eccv24_0_bib" style="font-family:Courier;font-size: 12px; margin: 0px;padding: 10px;display:none;min-width:350px;background-color:  #F0F0F0;border-radius: 10px;"><font size="2">
+                <br>
+                  @article{chowdhury2024meerkat,<br>
+                    title={Meerkat: Audio-Visual Large Language Model for Grounding in Space and Time},<br>
+                    author={Chowdhury, Sanjoy and Nag, Sayan and Dasgupta, Subhrajyoti and Chen, Jun and Elhoseiny, Mohamed and Gao, Ruohan and Manocha, Dinesh},<br>
+                    journal={ECCV},<br>
+                    year={2024}<br>
+                  }
+              </font></div>
+            </td>
+          </tr>
+          
+          <tr onmouseout="nerfbake_stop()" onmouseover="nerfbake_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nerfbake_image'><video  width=100% height=100% muted autoplay loop>
                 <source src="images/adverb.png" type="video/mp4">
                 Your browser does not support the video tag.
                 </video></div>
@@ -170,7 +235,7 @@
               <!-- / -->
               <!-- <a target=”_blank” href="https://www.bmvc2021-virtualconference.com/assets/papers/1430.pdf">Paper</a> -->
               <!-- / -->
-              <a target=”_blank” href="#">Code</a>
+              <a target=”_blank” href="https://github.com/Sreyan88/AdVerb-dereverb">Code</a>
               /
               <a target=”_blank” href="https://schowdhury671.github.io/adverb/">Website</a>
               /
